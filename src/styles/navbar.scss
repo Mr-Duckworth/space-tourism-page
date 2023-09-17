@@ -1,0 +1,109 @@
+
+@import "variables";
+
+
+
+.logo-img {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.nav-line {
+    width: 29vw;
+    display: inline-flex;
+    margin-right: -15px ;
+    position: relative;
+    z-index: 2;
+    border: 1px solid $White;
+    opacity: 0.25;
+}
+
+
+.nav-item {
+    padding-bottom: 20px;
+    border-bottom: 3px solid $opaque-black ;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid $gray;
+}
+
+.nav-item:active, .nav-item:visited {
+    border-bottom: 3px solid $White ;
+}
+
+
+.nav-list {
+    display: inline-flex;
+    gap: 55px;
+    padding: 20px 8% 0 6%;
+    float: right;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+}
+
+.nav-bar {
+    font-family: 'Barlow Condensed';
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+}
+
+
+.small-nav-container {
+    display: inline-flex;
+    gap: 30px;
+}
+
+
+.circle-nav {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0.7px solid $gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: $White;
+    font-family: "Belllefair";
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.circle-nav:not(:first-child) {
+    margin-top: 40px;
+}
+
+.circle-nav:hover {
+    border: 1.2px solid $White;
+    color: $White;
+}
+
+.circle-nav:target, .circle-nav:active {
+    background: $White;
+    color: black;
+    border: none;
+}
+
+.technology-nav-container {
+    cursor: pointer;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+
+
+
+

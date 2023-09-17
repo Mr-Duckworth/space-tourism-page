@@ -1,0 +1,42 @@
+@import "variables";
+
+
+.text-content {
+    display: inline-block;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+
+.crew-image {
+    display: inline;
+    float: right;
+    margin-right: 13%;
+    margin-top: -9%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background: $dark-gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.dot:hover {
+    background: $gray;
+}
+
+.dot:active, .dot:target {
+    background:$White ;
+}
+
+.crew-navbar {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 5% ;
+    cursor:pointer;
+}
+

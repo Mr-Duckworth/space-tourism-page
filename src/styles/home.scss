@@ -1,1 +1,28 @@
 
+@import "variables";
+
+
+.circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: $White;
+    color: $Off-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    margin-left: 23%;
+
+}
+
+.text-group {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+.content {
+    display: flex;
+}

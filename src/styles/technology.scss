@@ -1,0 +1,14 @@
+@import "variables";
+
+.technology-image {
+    display: inline;
+    float: right;
+    margin-top: -30%;
+}
+
+.technology-text-container {
+    position: relative;
+    display: flex;
+    gap: 8%;
+    margin-left: 7%;
+}
