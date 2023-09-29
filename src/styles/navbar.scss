@@ -1,18 +1,16 @@
 
 @import "variables";
 
-
+///////////////////////////// DESKTOP NAVBAR ////////////////////////////////
 
 .logo-img {
-    width: fit-content;
-    height: fit-content;
     border-radius: 50%;
-    display: inline-flex;
+    display: inline;
 }
 
 .nav-line {
     width: 29vw;
-    display: inline-flex;
+    display: inline;
     margin-right: -15px ;
     position: relative;
     z-index: 2;
@@ -21,52 +19,113 @@
 }
 
 
-.nav-item {
-    padding-bottom: 20px;
+.nav-list>a {
+    text-decoration: none;
+    padding-bottom: 35px;
     border-bottom: 3px solid $opaque-black ;
     cursor: pointer;
-}
-
-.nav-item:hover {
-    border-bottom: 3px solid $gray;
-}
-
-.nav-item:active, .nav-item:visited {
-    border-bottom: 3px solid $White ;
-}
-
-
-.nav-list {
-    display: inline-flex;
-    gap: 55px;
-    padding: 20px 8% 0 6%;
-    float: right;
-    position: relative;
-    z-index: 1;
-    backdrop-filter: blur(20px);
-}
-
-.nav-bar {
-    font-family: 'Barlow Condensed';
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $White;
 }
 
-
-.small-nav-container {
-    display: inline-flex;
-    gap: 30px;
+.nav-list>a:hover {
+    border-bottom: 3px solid $gray;
 }
 
+.nav-list>a.active {
+    border-bottom: 3px solid $White
+}
 
-.circle-nav {
-    width: 70px;
-    height: 70px;
+.nav-list {
+    display: flex;
+    gap: 55px;
+    width: 50vw;
+    padding: 35px 20px 0 80px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(40px);
+}
+
+.nav-bar {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+//// Destiination Navbar ///////////
+
+p.nav-text>a {
+    text-decoration: none;
+    padding-bottom: 12px;
+    border-bottom: 3px solid $opaque-black ;
+    cursor: pointer;
+    color: $light-blue;
+}
+
+p.nav-text>a:hover {
+    border-bottom: 3px solid $gray;
+}
+
+p.nav-text>a.active {
+    border-bottom: 3px solid $White;
+    color: $White;
+}
+
+.destination-nav-container {
+    display: inline-flex;
+    gap: 33px;
+    padding-bottom: 30px;
+}
+
+////////// Crew Navbar ///////////
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background: $dark-gray;
     border-radius: 50%;
-    border: 0.7px solid $gray;
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.dot:hover {
+    background: $gray;
+}
+
+.crew-navbar .active {
+    .dot {
+        background-color: $White
+    }
+}
+
+.crew-navbar {
+    cursor:pointer;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+////////// Technology Navbar ///////////
+
+
+.technology-nav-container a {
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid $gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,19 +137,19 @@
     cursor: pointer;
 }
 
-.circle-nav:not(:first-child) {
+.technology-nav-container a:not(:first-child) {
     margin-top: 40px;
 }
 
-.circle-nav:hover {
-    border: 1.2px solid $White;
+.technology-nav-container a:hover {
+    border: 1px solid $White;
     color: $White;
 }
 
-.circle-nav:target, .circle-nav:active {
+.technology-nav-container a.active {
     background: $White;
     color: black;
-    border: none;
+    border: 1px solid $opaque-black;
 }
 
 .technology-nav-container {
@@ -98,10 +157,238 @@
     display: inline;
 }
 
-a {
-    text-decoration: none;
-    color: none;
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) { 
+
+///////////////////// TABLET NAVBAR ///////////////////////////
+
+    #menu-icon {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav-bar .nav-line {
+        display: none;
+    }
+
+    .nav-list .bold {
+        display: none;
+    }
+
+    .nav-list>a {
+        padding-bottom: 30px;
+        padding-top: 7px;
+    }
+
+    .nav-list {
+        gap: 30px;
+        backdrop-filter: blur(85%);
+        float: right;
+        padding-right: 30px;
+    }
+
+    .nav-bar {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    .logo-img {
+        float: left;
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+
+    ////////// Crew Navbar ///////////
+
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew-navbar {
+        position: relative;
+        width: 80vw;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+
+    ////////// Technology Navbar ///////////
+
+
+    .technology-nav-container {
+        width: fit-content;
+        display: flex;
+        gap: 30px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    .technology-nav-container a {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .technology-nav-container a:not(:first-child) {
+        margin: 0;
+    }
+
+
 }
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+
+    ///////////////////// MOBILE NAVBAR ///////////////////////////
+    
+    .nav-list {
+        display: none;
+    }
+
+
+    #menu-icon {
+        display: block;
+        float: right;
+        position: relative;
+        margin-top: 23px;
+        margin-right: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav-bar .nav-line {
+        display: none;
+    }
+
+    .logo-img {
+        display: inline;
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .nav-bar {
+        all: unset;
+        display: block;
+        height: 64px;
+        margin: 0;
+    }
+
+    
+    ////////// Sidebar ///////////
+
+
+
+    .side-navbar {
+        height: 100vh;
+        width: 70vw;
+        position: absolute;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(45px);
+        z-index: 4;
+        display: none;
+    }
+    
+
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 50%;
+        margin-left: 10%;
+    }
+
+    .mobile-nav-list>a {
+        color: $White;
+        text-decoration: none;
+        font-size: 16px;
+        color: $White;
+        font-family: 'Barlow Condensed';
+        font-weight: 400;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-right: 4px solid $opaque-black;   
+        text-align: left;
+
+    }
+
+    .mobile-nav-list>a:hover {
+        border-right: 4px solid $gray ;   
+    }
+
+    .mobile-nav-list>a.active {
+        border-right: 4px solid $White;
+    }
+
+    .mobile-nav-list .bold {
+        font-weight: 800;
+        padding-right: 10px;
+    }
+    
+    
+    ////////// Destination Navbar ///////////
+
+
+    .destination-nav-container {
+        padding-bottom: 20px;
+    }
+
+    ////////// Crew Navbar ///////////
+
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew-navbar {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        margin: auto;
+    }
+
+
+    ////////// Technology Navbar ///////////
+
+
+    .technology-nav-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .technology-nav-container a {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .technology-nav-container a:not(:first-child) {
+        margin: 0;
+    }
+ }
+
+
 
 
 

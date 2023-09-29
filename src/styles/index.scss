@@ -4,9 +4,7 @@
 @import "variables";
 
 body {
-    padding-top: 2vh;
     margin: 0;
-    background-image: url("../assets/technology/background-technology-desktop.jpg");
 }
 
 p {
@@ -22,33 +20,36 @@ h1 {
     color: $White;
     margin: 0;
     padding: 0;
+    padding-bottom: 20px;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 95px;
+    font-size: 100px;
     font-family: "Belllefair";
     font-weight: 400;
     color: $White;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 56px;
     font-family: "Belllefair";
     font-weight: 400;
     color: $White;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    padding-top: 0.5rem;
-    padding-bottom: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 32px;
     font-family: "Belllefair";
     font-weight: 400;
     color: $gray;
@@ -59,13 +60,14 @@ h4 {
 }
 
 h5 {
-    font-size: 26px;
+    font-size: 28px;
     font-family: 'Barlow Condensed';
     font-weight: 400;
-    color: $White;
-    letter-spacing: 4.5px;
+    color: $light-blue;
+    letter-spacing: 4.75px;
     margin: 0;
     padding: 0;
+    padding-bottom: 15px;
     text-transform: uppercase;
 }
 
@@ -79,17 +81,17 @@ h5 {
     color: $White;
     font-family: 'Barlow Condensed';
     font-weight: 400;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
 }
 
 .body-text {
     color: $light-blue;
-    font-size: 17px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 34px;
     font-family: 'Barlow';
     font-weight: 400;
-    width: 26rem;
+    width: 444px;
     padding-bottom: 2.5rem;
 }
 
@@ -106,19 +108,148 @@ h5 {
     color: $light-blue;
     font-family: 'Barlow Condensed';
     font-weight: 400;
-    letter-spacing: 2.2px;
+    letter-spacing: 2.36px;
     text-transform: uppercase;
 }
 
 .text-heading {
-    padding-top: 2.5%;
-    padding-bottom: 6%;
-    margin-left: 7%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    margin-left: 10%;
+    color: $White;
 }
 
 .text-heading>.bold {
     color: $gray;
 }
 
+.hr-line {
+    all: unset;
+    display: block;
+    background: #383B4B;
+    height: 1px;
+    margin: auto;
+    padding: 0;
+}
 
 
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    * {
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 40px ;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .bold {
+        padding-right: 10px;
+    }
+
+    .nav-text {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+
+    .body-text {
+        font-size: 16px;
+        line-height:28px;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-heading {
+        display: block;
+        width: 100vw;
+        margin: 0;
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        text-align: left;
+    }
+
+    .hr-line {
+        width: 85vw;
+        margin-top: 30px;
+    }
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+
+    
+    * {
+        text-align: center;
+    }
+
+
+    h1 {
+        font-size: 80px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 56px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        padding-top: 0;
+    }
+
+    h4 {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .nav-text {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+
+    .body-text {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        width: 327px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .text-heading {
+        padding: 0;
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hr-line {
+        width: 90vw;
+      }
+}

@@ -1,13 +1,17 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function NavItem(props) {
+
     
     return (
-        <Link to={props.title}>
-            <div className="nav-item nav-text" ><span className="bold">{props.number}</span> {props.title}</div>
-        </Link>
+
+            <NavLink to={"/" + props.title}  className={({isActive, isPending}) => 
+                isPending ? "pending" : isActive ? "active" : "" 
+            } >
+                <span className="bold">{props.number}</span> {props.title}
+            </NavLink>
     )
 }
 

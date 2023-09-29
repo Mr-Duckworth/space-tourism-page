@@ -1,15 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Circle() {
 
-    const styleExplore = {
-        letterSpacing: "2px",
-        color: "#0B0D17"
-    }
 
     return(
         <div className="circle"> 
-        <h4 style={styleExplore}>EXPLORE</h4>
+        <NavLink to={"/destination"} className="explore">EXPLORE</NavLink>
         </div>
     )
 }

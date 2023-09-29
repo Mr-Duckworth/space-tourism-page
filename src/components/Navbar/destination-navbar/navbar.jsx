@@ -2,10 +2,10 @@ import React from "react";
 
 import NavItem from "./navItem";
 
-function SmallNavBar(props) {
+function DestinationNavBar(props) {
 
     return (
-        <div className="small-nav-container">
+        <div className="destination-nav-container">
            <NavItem title="moon" /> 
            <NavItem title="mars" /> 
            <NavItem title="europa" /> 
@@ -15,4 +15,4 @@ function SmallNavBar(props) {
 
 }
 
-export default SmallNavBar;
+export default DestinationNavBar;

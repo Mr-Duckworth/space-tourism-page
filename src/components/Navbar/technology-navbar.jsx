@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function TechnlogyNavBar(props) {
 
     return (
         <div className="technology-nav-container">
-            <div className="circle-nav">1</div>
-            <div className="circle-nav">2</div>
-            <div className="circle-nav">3</div>
+            <NavLink to={"/technology/vehicle"} className={({isActive, isPending}) => isPending ? "pending" : isActive? "active" : "" } >1</NavLink>
+            <NavLink to={"/technology/spaceport"} className={({isActive, isPending}) => isPending ? "pending" : isActive? "active" : "" } >2</NavLink>
+            <NavLink to={"/technology/capsule"} className={({isActive, isPending}) => isPending ? "pending" : isActive? "active" : "" } >3</NavLink>
         </div>
     )
 
