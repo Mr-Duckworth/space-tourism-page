@@ -22,9 +22,9 @@ I'm open to learning and improving, so if there's any advice you can render in r
 
 ## Authors
 
-Github - @AMr-Duckworth
-Frontend Mentor - @Mr-Duckworth
-Twitter - @_no__idea
+-Github - @Mr-Duckworth
+-Frontend Mentor - @Mr-Duckworth
+-Twitter - @_no__idea
 
 ## Version History
 
