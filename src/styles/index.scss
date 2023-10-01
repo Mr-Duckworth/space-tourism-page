@@ -133,6 +133,49 @@ h5 {
 }
 
 
+/////////////// ERROR PAGE //////////////////
+
+.error-page {
+    width: 100vw;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-image: url("../assets/error-page/desktop-error-page.png");
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.error-content {
+    margin: auto;
+}
+
+.error-content h1 {
+    font-family: 'Barlow';
+    letter-spacing: 15px;
+}
+
+.error-content h5 {
+    letter-spacing: 3px;
+    color: $White;
+}
+
+.error-content a {
+    text-decoration: none;
+    color: #0F2C59;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color: white;
+    width: fit-content;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
 
     * {
@@ -186,6 +229,14 @@ h5 {
     .hr-line {
         width: 85vw;
         margin-top: 30px;
+    }
+
+
+    //////////// ERROR PAGE ////////////////
+
+    .error-page {
+        height: 1024px;
+        background-image: url("../assets/error-page/tablet-error-page.png");
     }
 }
 
@@ -251,5 +302,17 @@ h5 {
 
     .hr-line {
         width: 90vw;
-      }
+    }
+
+    //////////// ERROR PAGE //////////////
+    
+
+    .error-page {
+        height: 667px;
+        background-image: url("../assets/error-page/mobile-error-page.png");
+    }
+
+    .error-content h5 {
+        width: 70vw;
+    }
 }

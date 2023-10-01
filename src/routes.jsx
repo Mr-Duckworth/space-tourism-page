@@ -14,10 +14,13 @@ import { CrewData } from "./data";
 import TechnologyPage from "./pages/technology-page";
 import { TechnologyData } from "./data";
 
+import PageNotFound from "./pages/page-not-found;";
+
 const Router = createBrowserRouter([
     {
         path: "/",
-        element:  <Navigate to="home" /> 
+        element:  <Navigate to="home" />,
+        errorElement: <PageNotFound />
     },
     {
         path:"home",
